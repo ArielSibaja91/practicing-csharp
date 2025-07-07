@@ -1,13 +1,7 @@
 ﻿// First way to initialize an object based on a class
-Fighter brawler = new Fighter()
-{
-    Name = "Ilia Topuria",
-    Age = 28
-};
+Fighter brawler = new Fighter("Ilia Topuria", 29);
 // Second way to initialize an object
-var wrestler = new Fighter();
-wrestler.Name = "Sean Brady";
-wrestler.Age = 32;
+var wrestler = new Fighter("Sean Brady", 32);
 
 Console.WriteLine(brawler.Name);
 Console.WriteLine(wrestler.Name + " " + wrestler.Age + " years old");
@@ -16,6 +10,12 @@ public class Fighter
 {
     public string Name { get; set; }
     public int Age { get; set; }
+    // Constructor method
+    public Fighter (string name, int age)
+    {
+        Name = name;
+        Age = age;
+    }
     public string BruceBuffer()
     {
         return "It's timeeee....Presenting...." + Name + " of " + Age + " years old!";
