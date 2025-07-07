@@ -5,11 +5,13 @@
         private int _fights;
         public string Name { get; set; }
         public int Age { get; set; }
+        public string Style { get; set; }
         // Constructor method
-        public Fighter(string name, int age, int fights)
+        public Fighter(string name, int age, string style, int fights)
         {
             Name = name;
             Age = age;
+            Style = style;
             Fights = fights;
         }
         public int Fights

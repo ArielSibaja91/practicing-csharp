@@ -1,6 +1,7 @@
 ﻿using PooCsharp.UFC;
 
-Fighter brawler = new Fighter("Ilia Topuria", 29, 17);
+Fighter brawler = new Fighter("Ilia Topuria", 29, "Boxing", 17);
+var boxer = new Boxer("Tyson Fury", 36, "Boxing", 34, "Orthodox");
 
-Console.WriteLine(brawler.Name);
 Console.WriteLine(brawler.BruceBuffer());
+Console.WriteLine(boxer.BruceBuffer());
