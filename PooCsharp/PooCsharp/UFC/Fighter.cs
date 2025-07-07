@@ -5,7 +5,7 @@
         private int _fights;
         public string Name { get; set; }
         public int Age { get; set; }
-        public string Style { get; set; }
+        protected string Style { get; set; }
         // Constructor method
         public Fighter(string name, int age, string style, int fights)
         {
