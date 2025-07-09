@@ -30,5 +30,13 @@
         {
             return "It's timeeee....Presenting...." + Name + " of " + Age + " years old! And " + Fights + " fights!";
         }
+        public string BruceBuffer(string message)
+        {
+            return message + " " + BruceBuffer();
+        }
+        public string BruceBuffer(int number)
+        {
+            return number + ".-" + BruceBuffer();
+        }
     }
 }
