@@ -26,7 +26,7 @@
                 _fights = value;
             }
         }
-        public string BruceBuffer()
+        public virtual string BruceBuffer()
         {
             return "It's timeeee....Presenting...." + Name + " of " + Age + " years old! And " + Fights + " fights!";
         }
