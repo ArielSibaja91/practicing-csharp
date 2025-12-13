@@ -1,0 +1,16 @@
+@ControllerApi_HostAddress = https://localhost:7101
+
+GET {{ControllerApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{ControllerApi_HostAddress}}/api/todoitems
+Content-Type: application/json
+
+{
+  "name": "walk dog",
+  "isComplete": true
+}
+
+###
